@@ -1,13 +1,14 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Exception
 %define	pnam	Class
 Summary:	Exception::Class - Declare real exception classes in Perl
 Summary(pl):	Exception::Class - Zadeklaruj prawdziwe klasy wyj±tków w Perlu
 Name:		perl-Exception-Class
-Version:	1.05
+Version:	1.07
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
@@ -16,7 +17,8 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Class-Data-Inheritable >= 0.02
-BuildRequires:	perl-Devel-StackTrace >= 1
+BuildRequires:	perl-Devel-StackTrace >= 1.01
+BuildRequires:	perl(Test::More) >= 0.46
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
