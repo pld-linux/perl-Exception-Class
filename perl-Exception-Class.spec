@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Exception
-%define	pnam	Class
+%define		pdir	Exception
+%define		pnam	Class
 Summary:	Exception::Class - declare real exception classes in Perl
 Summary(pl):	Exception::Class - deklarowanie prawdziwych klas wyj±tków w Perlu
 Name:		perl-Exception-Class
