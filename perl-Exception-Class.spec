@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Exception
 %define		pnam	Class
-Summary:	Test::Harness Perl module
+Summary:	Exception::Class Perl module
 Summary(cs):	Modul Exception::Class pro Perl
 Summary(da):	Perlmodul Exception::Class
 Summary(de):	Exception::Class Perl Modul
