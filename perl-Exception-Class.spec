@@ -26,10 +26,8 @@ Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005
-BuildRequires:	perl(Class::Data::Inheritable) >= 0.02
-BuildRequires:	perl(Devel::StackTrace) >= 0.9
-BuildRequires:	perl-Class-Data-Inheritable
-BuildRequires:	perl-Devel-StackTrace
+BuildRequires:	perl-Class-Data-Inheritable >= 0.02
+BuildRequires:	perl-Devel-StackTrace >= 0.9
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
