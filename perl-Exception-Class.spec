@@ -20,8 +20,8 @@ Summary(uk):	Модуль для Perl Exception::Class
 Summary(zh_CN):	Exception::Class Perl дё©И
 Name:		perl-Exception-Class
 Version:	1.01
-Release:	3
-License:	GPL or Artistic
+Release:	4
+License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
