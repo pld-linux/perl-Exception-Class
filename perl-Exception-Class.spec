@@ -10,7 +10,8 @@ Summary(pl):	Exception::Class - deklarowanie prawdziwych klas wyj±tków w Perlu
 Name:		perl-Exception-Class
 Version:	1.19
 Release:	1
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2c0d924a18b7aae904883a5cffa6f9b4
