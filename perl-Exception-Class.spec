@@ -8,13 +8,13 @@
 Summary:	Exception::Class - declare real exception classes in Perl
 Summary(pl):	Exception::Class - deklarowanie prawdziwych klas wyj±tków w Perlu
 Name:		perl-Exception-Class
-Version:	1.19
-Release:	2
+Version:	1.20
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2c0d924a18b7aae904883a5cffa6f9b4
+# Source0-md5:	0b632547961bafb4d5944a53ca35e2a3
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
