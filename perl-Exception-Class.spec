@@ -5,10 +5,10 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Exception
 %define	pnam	Class
-Summary:	Exception::Class - Declare real exception classes in Perl
-Summary(pl):	Exception::Class - Zadeklaruj prawdziwe klasy wyj±tków w Perlu
+Summary:	Exception::Class - declare real exception classes in Perl
+Summary(pl):	Exception::Class - deklarowanie prawdziwych klas wyj±tków w Perlu
 Name:		perl-Exception-Class
-Version:	1.11
+Version:	1.12
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
