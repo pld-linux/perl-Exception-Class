@@ -1,12 +1,27 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Exception
-%define	pnam	Class
-Summary:	%{pdir}::%{pnam} perl module
-Summary(pl):	Modu³ perla %{pdir}::%{pnam}
-Name:		perl-%{pdir}-%{pnam}
+%define		pdir	Exception
+%define		pnam	Class
+Summary:	Test::Harness Perl module
+Summary(cs):	Modul Exception::Class pro Perl
+Summary(da):	Perlmodul Exception::Class
+Summary(de):	Exception::Class Perl Modul
+Summary(es):	Módulo de Perl Exception::Class
+Summary(fr):	Module Perl Exception::Class
+Summary(it):	Modulo di Perl Exception::Class
+Summary(ja):	Exception::Class Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Exception::Class ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Exception::Class
+Summary(pl):	Modu³ Perla Exception::Class
+Summary(pt):	Módulo de Perl Exception::Class
+Summary(pt_BR):	Módulo Perl Exception::Class
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Exception::Class
+Summary(sv):	Exception::Class Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Exception::Class
+Summary(zh_CN):	Exception::Class Perl Ä£¿é
+Name:		perl-Exception-Class
 Version:	1.01
-Release:	1
-License:	Artistic
+Release:	2
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -23,7 +38,6 @@ in a manner similar to how exceptions are declared in Java.
 %description -l pl
 Exception::Class pozwala na deklarowanie w modu³ach wyj±tków
 w sposób podobny do stosowanego w Javie.
-
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -44,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes LICENSE
-%{perl_sitelib}/%{pdir}/%{pnam}.pm
+%{perl_sitelib}/Exception
 %{_mandir}/man3/*
