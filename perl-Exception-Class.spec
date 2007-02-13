@@ -6,7 +6,7 @@
 %define		pdir	Exception
 %define		pnam	Class
 Summary:	Exception::Class - declare real exception classes in Perl
-Summary(pl.UTF-8):   Exception::Class - deklarowanie prawdziwych klas wyjątków w Perlu
+Summary(pl.UTF-8):	Exception::Class - deklarowanie prawdziwych klas wyjątków w Perlu
 Name:		perl-Exception-Class
 Version:	1.20
 Release:	1
