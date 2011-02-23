@@ -15,12 +15,13 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Exception/DROLSKY/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	83788ad5a2c5e946877e4ec362e19622
 URL:		http://search.cpan.org/dist/Exception-Class/
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.31
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Class-Data-Inheritable >= 0.02
-BuildRequires:	perl-Devel-StackTrace >= 1.17
-BuildRequires:	perl-Test-Simple >= 0.46
+BuildRequires:	perl-Devel-StackTrace >= 1.20
+BuildRequires:	perl-Test-Simple >= 0.88
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
