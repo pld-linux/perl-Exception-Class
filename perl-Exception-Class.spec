@@ -8,20 +8,19 @@
 Summary:	Exception::Class - declare real exception classes in Perl
 Summary(pl.UTF-8):	Exception::Class - deklarowanie prawdziwych klas wyjątków w Perlu
 Name:		perl-Exception-Class
-Version:	1.29
+Version:	1.32
 Release:	1
-# same as perl
-License:	GPL v1+ or Artistic
+License:	Artistic 2.0
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Exception/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b9a91cd9eb10a02a9b53880359d2228b
+Source0:	http://www.cpan.org/modules/by-module/Exception/DROLSKY/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	83788ad5a2c5e946877e4ec362e19622
 URL:		http://search.cpan.org/dist/Exception-Class/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Class-Data-Inheritable >= 0.02
 BuildRequires:	perl-Devel-StackTrace >= 1.17
-BuildRequires:	perl(Test::More) >= 0.46
+BuildRequires:	perl-Test-Simple >= 0.46
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -56,5 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes LICENSE
-%{perl_vendorlib}/Exception
-%{_mandir}/man3/*
+%dir %{perl_vendorlib}/Exception
+%{perl_vendorlib}/Exception/Class.pm
+%{perl_vendorlib}/Exception/Class
+%{_mandir}/man3/Exception::Class*.3pm*
