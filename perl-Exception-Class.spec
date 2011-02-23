@@ -26,6 +26,8 @@ BuildRequires:	perl-Test-Simple >= 0.88
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_noautoreq	perl($isa)
+
 %description
 Exception::Class allows you to declare exceptions in your modules
 in a manner similar to how exceptions are declared in Java.
