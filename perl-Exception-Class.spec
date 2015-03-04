@@ -12,11 +12,11 @@ Version:	1.39
 Release:	1
 License:	Artistic 2.0
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Exception/DROLSKY/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Exception/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	971b6e47d18419bf1f8f0419ace2348c
 URL:		http://search.cpan.org/dist/Exception-Class/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.31
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Class-Data-Inheritable >= 0.02
