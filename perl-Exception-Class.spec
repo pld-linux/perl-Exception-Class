@@ -13,10 +13,11 @@ License:	Artistic 2.0
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Exception/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1e564d20b374a99fdf660ba3f36b0098
-URL:		http://search.cpan.org/dist/Exception-Class/
+URL:		https://metacpan.org/dist/Exception-Class
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.31
 BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Class-Data-Inheritable >= 0.02
 BuildRequires:	perl-Devel-StackTrace >= 2.00
